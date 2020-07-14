@@ -10,6 +10,8 @@ cap = cv2.VideoCapture(0)
 
 label = input('label: ')
 max_amt= input('max_mat: ')
+file_path = input('path: ')
+
 while(True):
     # Capture frame-by-frame
     ret, frame = cap.read()
@@ -35,7 +37,7 @@ while(True):
         #while True:
             
         # we will save each image with a certain code name
-        filename = "D:\\ML projects\\PictureData\\{}{}.jpg".format(label,cnt)
+        filename = str(file_path)+"\\{}{}.jpg".format(label,cnt)
         cv2.imwrite(filename,roi)
         
          #code to output and show the details 
