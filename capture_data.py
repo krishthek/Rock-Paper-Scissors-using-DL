@@ -1,4 +1,4 @@
-'''This script is the take pictures with the press of spacebar. Given the label and number of pictures requires'''
+'''This script is to take pictures with the press of spacebar, given the label and number of pictures required'''
 
 import numpy as np
 import cv2 
