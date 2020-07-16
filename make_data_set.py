@@ -1,18 +1,19 @@
+''' Makes a dataset using given pictures'''
+
 import cv2
 import matplotlib as plt
 import numpy as np
 import os
 import random 
 
-#lbl_to_class = {'rock':0,'paper':1,'scissor':2}
-#data_dir = input("enter the picture dir: ")
-data_dir = "D:\\ML projects\\PictureData"   #the main directory that contains the picture 
+
+data_dir = input("enter the picture dir: ")   #the main directory that contains the picture 
 categories = ['rock','paper','scissor']     # the categories that we have 
 img_size = 224
 
 train_data = []
 
-
+#lbl_to_class = {'rock':0,'paper':1,'scissor':2}
 for categ in categories:
     path = os.path.join(data_dir, categ) #path to each individial category
     label = categories.index(categ)      # rock =0, paper=1, scissor=2
